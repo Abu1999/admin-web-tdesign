@@ -1,0 +1,46 @@
+.#{$sider-prefix} {
+  &-layout {
+    height: calc(100vh);
+    overflow-y: auto;
+  }
+  &-aside {
+    width: 232px;
+    transition: all 0.3s;
+  }
+  &-aside-collapsed {
+    width: 64px;
+    transition: all 0.3s;
+  }
+  &-header {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid var(--td-component-border);
+  }
+  &-icon {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--td-comp-paddingTB-xs) var(--td-comp-paddingLR-xs);
+    border-bottom: 1px solid var(--td-component-border);
+  }
+  &-title-text {
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: var(--td-comp-paddingTB-s);
+    font-size: large;
+    font-weight: bold;
+  }
+  &-menu {
+    height: calc(100% - 57px);
+  }
+  &-content {
+    padding: var(--td-comp-paddingTB-l) var(--td-comp-paddingLR-xl);
+    overflow: auto;
+  }
+  &-view {
+    padding-top: var(--td-comp-paddingTB-l);
+    height: calc(100% - 50px);
+  }
+}
